@@ -14,14 +14,29 @@
     <!--COMPILER-->
     <maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
     <maven.compiler.release>17</maven.compiler.release>
+    <!--BINANCE-->
+    <binance-api-client.version>1.0.0-SNAPSHOT</binance-api-client.version>
     <!--SPRING-->
     <spring-boot-dependencies.version>2.6.0</spring-boot-dependencies.version>
   </properties>
 
   <dependencies>
+    <!--WEB-->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+    <!--BINANCE-->
+    <dependency>
+      <groupId>ru.an1s9n</groupId>
+      <artifactId>binance-api-client-spring-boot-starter</artifactId>
+      <version>${binance-api-client.version}</version>
+    </dependency>
+    <!--UTIL-->
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <scope>provided</scope>
     </dependency>
   </dependencies>
 
